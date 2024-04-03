@@ -1,0 +1,17 @@
+cabal-version:      3.0
+name:               poly-roots
+version:            0.1.0.0
+category:           Math
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall -fno-warn-name-shadowing -O2
+
+executable poly-roots
+    import:           warnings
+    main-is:          PolyRoots.hs
+    build-depends:    base ^>=4.17.2.1,
+                      random
+    hs-source-dirs:   app
+    default-language: Haskell2010
